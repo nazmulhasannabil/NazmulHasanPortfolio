@@ -8,8 +8,7 @@ import { Button } from "./ui/button";
 const links = [
     { name: "Home", path: "/" },
     { name: "Projects", path: "/projects" },
-    { name: "Contact", path: "/contact" },
-    { name: "Resume", path: "/resume" },
+    { name: "Contact", path: "/contact" }
 ];
 
 const Header = () => {
@@ -42,8 +41,8 @@ const Header = () => {
                             </Link>
                         ))}
                     </nav>
-                    <Link href="/contact">
-                        <Button className="bg-teal-400 text-white">Hire Me</Button>
+                    <Link href="/resume">
+                        <Button className="bg-teal-400 text-white">Resume</Button>
                     </Link>
                 </div>
 

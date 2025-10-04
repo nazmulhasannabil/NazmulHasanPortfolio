@@ -1,5 +1,5 @@
 import Image from "next/image"
-import profileImage from '../public/profile.png'
+import profileImage from '../public/nabil.png'
 
 
 const Photo = () => {

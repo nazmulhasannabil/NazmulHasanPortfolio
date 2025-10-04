@@ -2,7 +2,7 @@ import React from 'react'
 
 const Projects = () => {
   return (
-    <div>Projects page</div>
+    <div>Projects page Loading.....</div>
   )
 }
 
