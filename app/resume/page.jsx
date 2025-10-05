@@ -1,3 +1,4 @@
+import Social from "@/components/Social";
 import React from "react";
 
 const Resume = () => {
@@ -9,10 +10,7 @@ const Resume = () => {
         <div className="text-center">
           <h1 className="text-4xl font-bold text-teal-400">Nazmul Hasan</h1>
           <p className="mt-2">Phone: 01881649665 | Email: nazmulhasannabil4@gmail.com</p>
-          <p className="mt-1">
-            <a href="#" className="text-teal-400 hover:underline mr-4">LinkedIn</a>
-            <a href="#" className="text-teal-400 hover:underline">GitHub</a>
-          </p>
+          <Social className="flex items-center justify-center" />
         </div>
 
         {/* Objective */}
