@@ -21,45 +21,45 @@ const projects = [
     title: "Nazmul Hasan",
     description: "This is my personal portfolio Website.",
     imageUrl: "/thumb1.png",
-    liveLink: "#",
-    githubLink: "#",
-    stack: ["React", "Node.js", "MongoDB"]
+    liveLink: "https://nazmul-hasan-portfolio.vercel.app",
+    githubLink: "https://github.com/nazmulhasannabil/NazmulHasanPortfolio.git",
+    stack: ["Next", "Node.js", "Tailwind CSS"]
   },
   {
     num: "02",
     title: "Somokounik",
     description: "This is a brief description of Project One.",
     imageUrl: "/thumb3.png",
-    liveLink: "https://somokounik.com",
-    githubLink: "#",
-    stack: ["React", "Node.js", "MongoDB"]
+    liveLink: "https://somokounik.netlify.app",
+    githubLink: "https://github.com/nazmulhasannabil/Somokounik-v4.git",
+    stack: ["React","Node", "Tailwind"]
   },
   {
     num: "03",
     title: "Dental pavilion",
     description: "This is a brief description of Project One.",
     imageUrl: '/thumb2.png',
-    liveLink: "#",
-    githubLink: "#",
-    stack: ["React", "Node.js", "MongoDB"]
+    liveLink: "https://dentalpavilionbd.netlify.app",
+    githubLink: "https://github.com/nazmulhasannabil/Dental-pavilion-template.git",
+    stack: ["HTML 5", "Tailwind", "JavaScript"]
   },
   {
     num: "04",
     title: "Sip and Savor",
     description: "This is a brief description of Project One.",
     imageUrl: '/thumb5.png',
-    liveLink: "#",
-    githubLink: "#",
-    stack: ["React", "Node.js", "MongoDB"]
+    liveLink: "https://coffeeemporium.netlify.app",
+    githubLink: "https://github.com/nazmulhasannabil/Coffee_Shop_Client.git",
+    stack: ["React", "Node.js", "Tailwind"," MongoDB", "Express","Firebase" ]
   },
   {
     num: "05",
     title: "Job Map",
     description: "This is a brief description of Project One.",
     imageUrl: "/thumb4.png",
-    liveLink: "#",
-    githubLink: "#",
-    stack: ["React", "Node.js", "MongoDB"]
+    liveLink: "https://mapjob.netlify.app",
+    githubLink: "https://github.com/nazmulhasannabil/Job_Portal_client.git",
+    stack: ["React", "Node.js", "MongoDB", "Express", "Tailwind","Firebase"]
   }
 ];
 
