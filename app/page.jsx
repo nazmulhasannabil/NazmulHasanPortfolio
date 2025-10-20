@@ -2,6 +2,7 @@ import About from "@/components/About";
 import Photo from "@/components/Photo";
 import SkillComponent from "@/components/SkillsComponent";
 import Social from "@/components/Social";
+import Link from "next/link";
 import { FaFileDownload } from "react-icons/fa";
 
 export default function Home() {
@@ -15,13 +16,15 @@ export default function Home() {
             <h1 className="text-3xl">Hello I'm <br /><span className="text-teal-400">Nazmul Hasan</span></h1>
             <p className="mt-6 min-w-[400px] text-white">Full-stack developer expert in React, Next.js & Node.js
               {/* Scalable solutions with clean, maintainable code */}
-              </p>
+            </p>
 
             <div className="mt-6 flex flex-col lg:flex-row items-center gap-6">
-              <button className="flex items-center gap-2 text-teal-400 border-2 border-teal-400 hover:bg-teal-400 hover:text-white px-6 py-3 rounded-lg transition-all duration-300 font-medium shadow-sm hover:shadow-md">
-                <span>Download CV</span>
-                <FaFileDownload />
-              </button>
+              <Link href="/Nazmul Hasan Resume (Frontend).pdf" target="_blank" download>
+                <button className="flex items-center gap-2 text-teal-400 border-2 border-teal-400 hover:bg-teal-400 hover:text-white px-6 py-3 rounded-lg transition-all duration-300 font-medium shadow-sm hover:shadow-md">
+                  <span>Download CV</span>
+                  <FaFileDownload />
+                </button>
+              </Link>
               <Social />
             </div>
           </div>
