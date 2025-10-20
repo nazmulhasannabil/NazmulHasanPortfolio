@@ -19,7 +19,7 @@ export default function Home() {
             </p>
 
             <div className="mt-6 flex flex-col lg:flex-row items-center gap-6">
-              <Link href="/Nazmul Hasan Resume (Frontend).pdf" target="_blank" download>
+              <Link href="/Nazmul_Hasan_Resume_(Frontend).pdf" target="_blank" download>
                 <button className="flex items-center gap-2 text-teal-400 border-2 border-teal-400 hover:bg-teal-400 hover:text-white px-6 py-3 rounded-lg transition-all duration-300 font-medium shadow-sm hover:shadow-md">
                   <span>Download CV</span>
                   <FaFileDownload />
