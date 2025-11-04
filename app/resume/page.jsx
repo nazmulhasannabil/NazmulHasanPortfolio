@@ -10,7 +10,9 @@ const Resume = () => {
         <div className="text-center">
           <h1 className="text-4xl font-bold text-teal-400">Nazmul Hasan</h1>
           <p className="mt-2">Phone: 01881649665 | Email: nazmulhasannabil4@gmail.com</p>
-          <Social className="flex items-center justify-center" />
+          <div className="flex justify-center mt-4">
+            <Social />
+          </div>
         </div>
 
         {/* Objective */}
@@ -38,10 +40,10 @@ const Resume = () => {
         <div>
           <h2 className="text-2xl font-semibold text-teal-400 mb-2">Projects</h2>
           <ul className="list-disc list-inside space-y-1 text-white">
-            <li><strong>Somokounik</strong> – Civil Engineering Firm Website<br/> Tech: ReactJS, TailwindCSS, DaisyUI, Vite</li>
-            <li><strong>Dental Pavilion</strong>-Dental Clinic Website<br/> Tech: HTML, JavaScript, Bootstrap, DaisyUI, Email.js</li>
-            <li><strong>Sip & Savor</strong><br/> Tech: ReactJS, TailwindCSS, DaisyUI, Vite</li>
-            <li><strong>Job Portal</strong><br/> Tech: ReactJS, TailwindCSS, DaisyUI, Vite</li>
+            <li><strong>Somokounik</strong> – Civil Engineering Firm Website<br /> Tech: ReactJS, TailwindCSS, DaisyUI, Vite</li>
+            <li><strong>Dental Pavilion</strong>-Dental Clinic Website<br /> Tech: HTML, JavaScript, Bootstrap, DaisyUI, Email.js</li>
+            <li><strong>Sip & Savor</strong><br /> Tech: ReactJS, TailwindCSS, DaisyUI, Vite</li>
+            <li><strong>Job Portal</strong><br /> Tech: ReactJS, TailwindCSS, DaisyUI, Vite</li>
           </ul>
         </div>
 

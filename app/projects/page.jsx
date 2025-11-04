@@ -19,20 +19,29 @@ const projects = [
   {
     num: "01",
     title: "Nazmul Hasan",
-    description: "This is my personal portfolio Website.",
+    description: "Always learning, always improving.",
     imageUrl: "/thumb1.png",
     liveLink: "https://nazmul-hasan-portfolio.vercel.app",
     githubLink: "https://github.com/nazmulhasannabil/NazmulHasanPortfolio.git",
-    stack: ["Next", "Node.js", "Tailwind CSS"]
+    stack: [
+      "Next.js",
+      "React",
+      "Tailwind CSS",
+      "Framer Motion",
+      "Lottie-React",
+      "Radix UI",
+      "Swiper",
+      "React Icons"
+    ]
   },
   {
     num: "02",
     title: "Somokounik",
-    description: "This is a brief description of Project One.",
+    description: "Developed for a civil engineering firm to showcase their services, projects, and expertise.",
     imageUrl: "/thumb3.png",
     liveLink: "https://somokounik.netlify.app",
     githubLink: "https://github.com/nazmulhasannabil/Somokounik-v4.git",
-    stack: ["React","Node", "Tailwind"]
+    stack: ["React", "Node", "Tailwind"]
   },
   {
     num: "03",
@@ -50,7 +59,7 @@ const projects = [
     imageUrl: '/thumb5.png',
     liveLink: "https://coffeeemporium.netlify.app",
     githubLink: "https://github.com/nazmulhasannabil/Coffee_Shop_Client.git",
-    stack: ["React", "Node.js", "Tailwind"," MongoDB", "Express","Firebase" ]
+    stack: ["React", "Node.js", "Tailwind", " MongoDB", "Express", "Firebase"]
   },
   {
     num: "05",
@@ -59,7 +68,7 @@ const projects = [
     imageUrl: "/thumb4.png",
     liveLink: "https://mapjob.netlify.app",
     githubLink: "https://github.com/nazmulhasannabil/Job_Portal_client.git",
-    stack: ["React", "Node.js", "MongoDB", "Express", "Tailwind","Firebase"]
+    stack: ["React", "Node.js", "MongoDB", "Express", "Tailwind", "Firebase"]
   }
 ];
 
@@ -72,10 +81,17 @@ const Projects = () => {
 
   return (
     <div className='container mx-auto lg:py-24'>
+      <h2 className="text-4xl font-bold mb-6 text-teal-400 text-center">
+        Projects
+      </h2>
       <div className="flex flex-col-reverse lg:flex-row gap-6">
         <div className="w-full lg:w-[40%] lg:h-[460px] gap-4 flex flex-col justify-center">
           {/* outline */}
-          <div className="text-8xl leading-none font-extrabold text-transparent text-outline ">{project.num}</div>
+          <div className="text-8xl font-extrabold text-outline">
+            {project.num}
+          </div>
+
+
           <h2 className="text-4xl font-bold mb-4">{project.title}</h2>
           <p className="mb-4">{project.description}</p>
           {/* stacks */}

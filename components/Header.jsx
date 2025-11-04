@@ -42,7 +42,7 @@ const Header = () => {
                         ))}
                     </nav>
                     <Link href="/resume">
-                        <Button className="bg-teal-400 text-white">Resume</Button>
+                        <Button className="flex items-center gap-2 text-teal-400 border-2 border-teal-400 hover:bg-teal-400 hover:text-white px-6 py-3 rounded-lg transition-all duration-300 font-medium shadow-sm hover:shadow-md">Resume</Button>
                     </Link>
                 </div>
 
@@ -94,7 +94,7 @@ const Header = () => {
                                 </li>
                             ))}
                         </ul>
-                        <p className="mt-auto py-2 px-1 text-sm">“Be the change you wish to see in the world.”</p>
+                        <p className="mt-auto py-2 px-1 text-xs">“Be the change you wish to see in the world.”</p>
                     </nav>
                 </div>
             )}
