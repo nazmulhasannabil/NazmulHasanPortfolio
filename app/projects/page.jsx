@@ -18,6 +18,16 @@ import WorkSliderButton from '@/components/WorkSliderButton';
 const projects = [
   {
     num: "01",
+    title: "Inventory Management System",
+
+    description: "An inventory management system that streamlines product tracking, stock management, and real-time inventory monitoring with automated alerts and reporting features.",
+    imageUrl: "/thumb6.png",
+    liveLink: "https://inventory-management-smoky-three.vercel.app",
+    githubLink: "https://github.com/nazmulhasannabil/inventory-management.git",
+    stack: ["Next.js", "Tailwind", "NeonDB", "Express", "PostgreSQL", "Prisma", "Stack-frame"]
+  },
+  {
+    num: "02",
     title: "Nazmul Hasan",
     description: "Always learning, always improving.",
     imageUrl: "/thumb1.png",
@@ -35,26 +45,7 @@ const projects = [
     ]
   },
   {
-    num: "02",
-    title: "Somokounik",
-    description: "Developed for a civil engineering firm to showcase their services, projects, and expertise.",
-    imageUrl: "/thumb3.png",
-    liveLink: "https://somokounik.netlify.app",
-    githubLink: "https://github.com/nazmulhasannabil/Somokounik-v4.git",
-    stack: ["React", "Node", "Tailwind"]
-  },
-  {
     num: "03",
-    title: "Dental pavilion",
-
-    description: "A modern dental clinic website showcasing services, appointment booking, and patient care information.",
-    imageUrl: '/thumb2.png',
-    liveLink: "https://dentalpavilionbd.netlify.app",
-    githubLink: "https://github.com/nazmulhasannabil/Dental-pavilion-template.git",
-    stack: ["HTML 5", "Tailwind", "JavaScript"]
-  },
-  {
-    num: "04",
     title: "Sip and Savor",
 
     description: "A full-stack coffee shop application that allows users to browse products, showcase coffee collections, and manage inventory with CRUD operations.",
@@ -64,7 +55,7 @@ const projects = [
     stack: ["React", "Node.js", "Tailwind", " MongoDB", "Express", "Firebase"]
   },
   {
-    num: "05",
+    num: "04",
     title: "Job Map",
 
     description: "A job portal platform that enables users to post job listings and search for employment opportunities with advanced filtering and application tracking.",
@@ -74,15 +65,24 @@ const projects = [
     stack: ["React", "Node.js", "MongoDB", "Express", "Tailwind", "Firebase"]
   },
   {
+    num: "05",
+    title: "Somokounik",
+    description: "Developed for a civil engineering firm to showcase their services, projects, and expertise.",
+    imageUrl: "/thumb3.png",
+    liveLink: "https://somokounik.netlify.app",
+    githubLink: "https://github.com/nazmulhasannabil/Somokounik-v4.git",
+    stack: ["React", "Node", "Tailwind"]
+  },
+  {
     num: "06",
-    title: "Inventory Management System",
+    title: "Dental pavilion",
 
-    description: "An inventory management system that streamlines product tracking, stock management, and real-time inventory monitoring with automated alerts and reporting features.",
-    imageUrl: "/thumb6.png",
-    liveLink: "https://inventory-management-smoky-three.vercel.app",
-    githubLink: "https://github.com/nazmulhasannabil/inventory-management.git",
-    stack: ["Next.js", "Tailwind", "NeonDB", "Express", "PostgreSQL", "Prisma", "Stack-frame"]
-  }
+    description: "A modern dental clinic website showcasing services, appointment booking, and patient care information.",
+    imageUrl: '/thumb2.png',
+    liveLink: "https://dentalpavilionbd.netlify.app",
+    githubLink: "https://github.com/nazmulhasannabil/Dental-pavilion-template.git",
+    stack: ["HTML 5", "Tailwind", "JavaScript"]
+  },
 ];
 
 const Projects = () => {
@@ -110,7 +110,7 @@ const Projects = () => {
           {/* stacks */}
           <ul>
             {project.stack.map((tech, index) => (
-              <li key={index} className="inline-block bg-teal-400 text-gray-800 px-3 py-1 rounded-full text-sm mr-2 mb-2">{tech}</li>
+              <li key={index} className="inline-block bg-teal-400 hover:bg-white hover:text-gray-800 cursor-pointer px-3 py-1 rounded-full text-sm mr-2 mb-2">{tech}</li>
             ))}
           </ul>
           {/* border */}
