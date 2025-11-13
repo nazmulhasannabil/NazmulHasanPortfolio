@@ -46,7 +46,8 @@ const projects = [
   {
     num: "03",
     title: "Dental pavilion",
-    description: "This is a brief description of Project One.",
+
+    description: "A modern dental clinic website showcasing services, appointment booking, and patient care information.",
     imageUrl: '/thumb2.png',
     liveLink: "https://dentalpavilionbd.netlify.app",
     githubLink: "https://github.com/nazmulhasannabil/Dental-pavilion-template.git",
@@ -55,7 +56,8 @@ const projects = [
   {
     num: "04",
     title: "Sip and Savor",
-    description: "This is a brief description of Project One.",
+
+    description: "A full-stack coffee shop application that allows users to browse products, showcase coffee collections, and manage inventory with CRUD operations.",
     imageUrl: '/thumb5.png',
     liveLink: "https://coffeeemporium.netlify.app",
     githubLink: "https://github.com/nazmulhasannabil/Coffee_Shop_Client.git",
@@ -64,11 +66,22 @@ const projects = [
   {
     num: "05",
     title: "Job Map",
-    description: "This is a brief description of Project One.",
+
+    description: "A job portal platform that enables users to post job listings and search for employment opportunities with advanced filtering and application tracking.",
     imageUrl: "/thumb4.png",
     liveLink: "https://mapjob.netlify.app",
     githubLink: "https://github.com/nazmulhasannabil/Job_Portal_client.git",
     stack: ["React", "Node.js", "MongoDB", "Express", "Tailwind", "Firebase"]
+  },
+  {
+    num: "06",
+    title: "Inventory Management System",
+
+    description: "An inventory management system that streamlines product tracking, stock management, and real-time inventory monitoring with automated alerts and reporting features.",
+    imageUrl: "/thumb6.png",
+    liveLink: "https://inventory-management-smoky-three.vercel.app",
+    githubLink: "https://github.com/nazmulhasannabil/inventory-management.git",
+    stack: ["Next.js", "Tailwind", "NeonDB", "Express", "PostgreSQL", "Prisma", "Stack-frame"]
   }
 ];
 
