@@ -117,8 +117,8 @@ const Projects = () => {
           <div className='border border-white/20'></div>
           {/* link buttons */}
           <div className='flex gap-4 mt-4'>
-            <Link href={project.liveLink} title="Visit Live Site"><FaExternalLinkAlt className="text-xl hover:text-teal-400 transition" /></Link>
-            <Link href={project.githubLink} title="Visit Github"><FaGithub className="text-2xl hover:text-teal-400 transition" /></Link>
+            <Link href={project.liveLink} target="_blank" rel="noopener noreferrer" title="Visit Live Site"><FaExternalLinkAlt className="text-xl hover:text-teal-400 transition" /></Link>
+            <Link href={project.githubLink} target="_blank" rel="noopener noreferrer" title="Visit Github"><FaGithub className="text-2xl hover:text-teal-400 transition" /></Link>
           </div>
 
         </div>

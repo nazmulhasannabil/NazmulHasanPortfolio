@@ -6,6 +6,8 @@ const Social = () => {
     <div className="flex space-x-6">
                 <a
                   href="https://github.com/nazmulhasannabil"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="hover:text-white text-teal-400 transition-colors duration-300 "
                   aria-label="GitHub"
                 >
@@ -13,6 +15,8 @@ const Social = () => {
                 </a>
                 <a
                   href="https://www.linkedin.com/in/nazmul-hasan-nabil"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="hover:text-white text-teal-400 transition-colors duration-300"
                   aria-label="LinkedIn"
                 >
@@ -20,6 +24,8 @@ const Social = () => {
                 </a>
                 <a
                   href="https://x.com/Nazmul_Hasan09"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="hover:text-white text-teal-400 transition-colors duration-300"
                   aria-label="Twitter"
                 >
