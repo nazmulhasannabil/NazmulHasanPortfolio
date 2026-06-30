@@ -2,6 +2,7 @@ import { JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import GlobalFlyingRobot from "@/components/GlobalFlyingRobot";
 
 const jetbrainsMono = JetBrains_Mono({
   variable: "--font-jetbrainsMono",
@@ -11,17 +12,18 @@ const jetbrainsMono = JetBrains_Mono({
 
 
 export const metadata = {
-  title: "Nazmul Hasan",
-  description: "Web Developer",
+  title: "Nazmul Hasan | Full-Stack Developer",
+  description: "Full-stack developer specializing in React, Next.js, Node.js, TypeScript, PostgreSQL & MongoDB. Building modern, scalable web applications.",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${jetbrainsMono.className} antialiased px-[8%] bg-gray-900 text-white `}
+        className={`${jetbrainsMono.className} antialiased text-white min-h-screen`}
       >
         <Header />
+        <GlobalFlyingRobot />
         {children}
         <Footer />
       </body>

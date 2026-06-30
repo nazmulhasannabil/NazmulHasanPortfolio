@@ -3,8 +3,8 @@ import React from "react";
 
 const Resume = () => {
   return (
-    <section className="bg-gray-900 text-white min-h-screen px-6 py-12">
-      <div className="max-w-5xl mx-auto space-y-10">
+    <section className="min-h-screen py-12">
+      <div className="site-container space-y-10">
 
         {/* Header */}
         <div className="text-center">

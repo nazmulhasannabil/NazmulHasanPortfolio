@@ -8,7 +8,7 @@ const Footer = () => {
 
   return (
     <footer className="py-12">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="site-container">
         {/* Brand Section - Centered */}
         <div className="flex flex-col items-center text-center space-y-6">
           <h3 className="text-2xl font-bold text-white">Nazmul Hasan</h3>

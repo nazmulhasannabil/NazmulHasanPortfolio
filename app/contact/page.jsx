@@ -21,8 +21,8 @@ const ContactUs = () => {
   };
 
   return (
-    <section className="bg-gray-900 min-h-screen flex items-center justify-center px-6 py-12">
-      <div className="max-w-4xl w-full">
+    <section className="min-h-screen flex items-center justify-center py-12">
+      <div className="site-container w-full">
         <h2 className="text-4xl font-bold mb-6 text-teal-400 text-center">
           Contact
         </h2>

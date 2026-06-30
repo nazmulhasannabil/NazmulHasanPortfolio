@@ -3,11 +3,12 @@ import { useState } from 'react';
 import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css';
+import { motion, AnimatePresence } from 'framer-motion';
 
 import Link from 'next/link';
 import Image from 'next/image';
 import { FaExternalLinkAlt, FaGithub } from 'react-icons/fa';
-import WorkSliderButton from '@/components/WorkSliderButton';
+import ProjectSliderNav from '@/components/ProjectSliderNav';
 
 // import thumb1 from '../public/thumb1.png'
 // import thumb2 from '../public/thumb2.png'
@@ -87,47 +88,82 @@ const projects = [
 
 const Projects = () => {
   const [project, setProject] = useState(projects[0]);
+  const [activeIndex, setActiveIndex] = useState(0);
+  const [swiperInstance, setSwiperInstance] = useState(null);
 
   const handleSlideChange = (swiper) => {
+    setActiveIndex(swiper.activeIndex);
     setProject(projects[swiper.activeIndex]);
   }
 
   return (
-    <div className='container mx-auto lg:py-24'>
-      <h2 className="text-4xl font-bold mb-6 text-teal-400 text-center">
-        Projects
-      </h2>
+    <div className='site-container lg:py-24'>
+      <motion.div
+        className="text-center mb-10"
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+      >
+        <span className="text-sm uppercase tracking-widest text-teal-400/80">Featured work</span>
+        <h2 className="text-4xl font-bold mt-2">
+          My <span className="gradient-text">Projects</span>
+        </h2>
+      </motion.div>
       <div className="flex flex-col-reverse lg:flex-row gap-6">
         <div className="w-full lg:w-[40%] lg:h-[460px] gap-4 flex flex-col justify-center">
-          {/* outline */}
-          <div className="text-8xl font-extrabold text-outline">
-            {project.num}
-          </div>
+          <AnimatePresence mode="wait">
+            <motion.div
+              key={project.num}
+              initial={{ opacity: 0, x: -20 }}
+              animate={{ opacity: 1, x: 0 }}
+              exit={{ opacity: 0, x: 20 }}
+              transition={{ duration: 0.3 }}
+            >
+              <div className="text-8xl font-extrabold text-outline">
+                {project.num}
+              </div>
 
+              <h2 className="text-3xl sm:text-4xl font-bold mb-4 mt-2">{project.title}</h2>
+              <p className="mb-4 text-gray-300">{project.description}</p>
+              <ul>
+                {project.stack.map((tech, index) => (
+                  <li key={index} className="inline-block bg-teal-400/10 border border-teal-400/30 text-teal-400 hover:bg-teal-400 hover:text-gray-900 cursor-default px-3 py-1 rounded-full text-sm mr-2 mb-2 transition-colors duration-200">{tech}</li>
+                ))}
+              </ul>
+              <div className='border border-white/10 my-4'></div>
+              <div className='flex gap-4'>
+                <Link href={project.liveLink} target="_blank" rel="noopener noreferrer" title="Visit Live Site">
+                  <motion.span whileHover={{ scale: 1.2 }} className="inline-block">
+                    <FaExternalLinkAlt className="text-xl hover:text-teal-400 transition" />
+                  </motion.span>
+                </Link>
+                <Link href={project.githubLink} target="_blank" rel="noopener noreferrer" title="Visit Github">
+                  <motion.span whileHover={{ scale: 1.2 }} className="inline-block">
+                    <FaGithub className="text-2xl hover:text-teal-400 transition" />
+                  </motion.span>
+                </Link>
+              </div>
 
-          <h2 className="text-4xl font-bold mb-4">{project.title}</h2>
-          <p className="mb-4">{project.description}</p>
-          {/* stacks */}
-          <ul>
-            {project.stack.map((tech, index) => (
-              <li key={index} className="inline-block bg-teal-400 hover:bg-white hover:text-gray-800 cursor-pointer px-3 py-1 rounded-full text-sm mr-2 mb-2">{tech}</li>
-            ))}
-          </ul>
-          {/* border */}
-          <div className='border border-white/20'></div>
-          {/* link buttons */}
-          <div className='flex gap-4 mt-4'>
-            <Link href={project.liveLink} target="_blank" rel="noopener noreferrer" title="Visit Live Site"><FaExternalLinkAlt className="text-xl hover:text-teal-400 transition" /></Link>
-            <Link href={project.githubLink} target="_blank" rel="noopener noreferrer" title="Visit Github"><FaGithub className="text-2xl hover:text-teal-400 transition" /></Link>
-          </div>
-
+              <ProjectSliderNav
+                swiper={swiperInstance}
+                activeIndex={activeIndex}
+                total={projects.length}
+              />
+            </motion.div>
+          </AnimatePresence>
         </div>
-        <div className="w-full lg:w-[60%]">
+        <motion.div
+          className="w-full lg:w-[60%]"
+          initial={{ opacity: 0, scale: 0.95 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+        >
           <Swiper
             spaceBetween={10}
             slidesPerView={1}
+            onSwiper={setSwiperInstance}
             onSlideChange={handleSlideChange}
-
           >
             {projects.map((project, index) => {
               return (
@@ -148,10 +184,8 @@ const Projects = () => {
                 </SwiperSlide>
               );
             })}
-            {/* Slider Buttons */}
-            <WorkSliderButton />
           </Swiper>
-        </div>
+        </motion.div>
       </div>
     </div>
   )
