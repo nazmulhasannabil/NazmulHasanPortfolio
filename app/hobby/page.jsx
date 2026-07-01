@@ -1,15 +1,21 @@
 "use client";
 
-import { useState, useCallback, useEffect } from "react";
+import { useState, useCallback, useEffect, Suspense } from "react";
+import { useSearchParams } from "next/navigation";
 import { AnimatePresence } from "framer-motion";
-import PhotographyHero from "@/components/hobby/PhotographyHero";
-import PhotoGallery, { PhotoLightbox } from "@/components/hobby/PhotoGallery";
-import FilmStrip from "@/components/hobby/FilmStrip";
-import { photos } from "@/lib/photographyData";
+import Gallery from "./components/gallery";
+import Lightbox from "./components/lightbox";
+import { photoCategories, photos } from "./data";
 
-export default function HobbyPage() {
-  const [activeCategory, setActiveCategory] = useState("All");
+const VALID_CATS = photoCategories.filter((c) => c !== "All");
+
+function GalleryPage() {
+  const searchParams = useSearchParams();
   const [selectedPhoto, setSelectedPhoto] = useState(null);
+
+  const catParam = searchParams.get("cat");
+  const activeCategory =
+    catParam && VALID_CATS.includes(catParam) ? catParam : "All";
 
   const filtered =
     activeCategory === "All"
@@ -44,34 +50,12 @@ export default function HobbyPage() {
   }, [selectedPhoto, goNext, goPrev]);
 
   return (
-    <main className="min-h-screen pb-16">
-      <PhotographyHero />
-      <FilmStrip />
-      <PhotoGallery
-        onSelect={setSelectedPhoto}
-        activeCategory={activeCategory}
-        setActiveCategory={setActiveCategory}
-      />
-
-      {/* Philosophy section */}
-      <section className="py-16">
-        <div className="site-container">
-          <div className="relative overflow-hidden rounded-3xl border border-teal-400/20 bg-gradient-to-br from-teal-400/5 via-gray-900/80 to-cyan-400/5 p-8 sm:p-12 text-center">
-            <div className="absolute inset-0 photo-grain opacity-20 pointer-events-none" />
-            <blockquote className="relative text-xl sm:text-2xl font-light text-gray-200 leading-relaxed max-w-2xl mx-auto">
-              &ldquo;I don&apos;t take photographs — I capture emotions frozen in time.
-              Every click is a pause button on a moment that will never repeat.&rdquo;
-            </blockquote>
-            <p className="relative mt-4 text-teal-400 text-sm font-medium">
-              — Nazmul Hasan, Photographer
-            </p>
-          </div>
-        </div>
-      </section>
+    <>
+      <Gallery activeCategory={activeCategory} onSelect={setSelectedPhoto} />
 
       <AnimatePresence>
         {selectedPhoto && (
-          <PhotoLightbox
+          <Lightbox
             photo={selectedPhoto}
             onClose={() => setSelectedPhoto(null)}
             onPrev={goPrev}
@@ -81,6 +65,14 @@ export default function HobbyPage() {
           />
         )}
       </AnimatePresence>
-    </main>
+    </>
+  );
+}
+
+export default function HobbyPage() {
+  return (
+    <Suspense fallback={null}>
+      <GalleryPage />
+    </Suspense>
   );
 }

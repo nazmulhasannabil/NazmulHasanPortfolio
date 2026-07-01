@@ -1,9 +1,18 @@
+import Header from "./components/header";
+import Footer from "./components/footer";
+
 export const metadata = {
-  title: "Photography Hobby | Nazmul Hasan",
+  title: "Photography | Nazmul Hasan",
   description:
-    "Explore Nazmul Hasan's photography — portraits, street, nature, and urban frames from Bangladesh. Former President, MEC Photography Club.",
+    "Street, nature, and bird photography by Nazmul Hasan — former President, MEC Photography Club.",
 };
 
 export default function HobbyLayout({ children }) {
-  return children;
+  return (
+    <div className="min-h-screen bg-white text-black">
+      <Header />
+      <main>{children}</main>
+      <Footer />
+    </div>
+  );
 }

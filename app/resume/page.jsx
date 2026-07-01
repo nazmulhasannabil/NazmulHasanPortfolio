@@ -1,4 +1,4 @@
-import Social from "@/components/Social";
+﻿import Social from "@/components/Social";
 import React from "react";
 
 const Resume = () => {
@@ -40,7 +40,7 @@ const Resume = () => {
         <div>
           <h2 className="text-2xl font-semibold text-teal-400 mb-2">Projects</h2>
           <ul className="list-disc list-inside space-y-1 text-white">
-            <li><strong>Somokounik</strong> – Civil Engineering Firm Website<br /> Tech: ReactJS, TailwindCSS, DaisyUI, Vite</li>
+            <li><strong>Somokounik</strong> ΓÇô Civil Engineering Firm Website<br /> Tech: ReactJS, TailwindCSS, DaisyUI, Vite</li>
             <li><strong>Dental Pavilion</strong>-Dental Clinic Website<br /> Tech: HTML, JavaScript, Bootstrap, DaisyUI, Email.js</li>
             <li><strong>Sip & Savor</strong><br /> Tech: ReactJS, TailwindCSS, DaisyUI, Vite</li>
             <li><strong>Job Portal</strong><br /> Tech: ReactJS, TailwindCSS, DaisyUI, Vite</li>
@@ -51,8 +51,8 @@ const Resume = () => {
         <div>
           <h2 className="text-2xl font-semibold text-teal-400 mb-2">Education</h2>
           <ul className="list-disc list-inside space-y-1 text-white">
-            <li>Dhaka University Technology Unit, MEC – BSc in Computer Science and Engineering (Session:19-20)</li>
-            <li>Dhaka College, Dhaka – Higher Secondary Certificate (2019)</li>
+            <li>Dhaka University Technology Unit, MEC ΓÇô BSc in Computer Science and Engineering (Session:19-20)</li>
+            <li>Dhaka College, Dhaka ΓÇô Higher Secondary Certificate (2019)</li>
           </ul>
         </div>
 
@@ -60,9 +60,9 @@ const Resume = () => {
         <div>
           <h2 className="text-2xl font-semibold text-teal-400 mb-2">Extra Curricular Activities</h2>
           <ul className="list-disc list-inside space-y-1 text-white">
-            <li>Former President – MEC Photography Club</li>
-            <li>Organizing Secretary – MEC Computer Club</li>
-            <li>Founder & Owner – Paperman (Handmade Notebook Business)</li>
+            <li>Former President ΓÇô MEC Photography Club</li>
+            <li>Organizing Secretary ΓÇô MEC Computer Club</li>
+            <li>Founder & Owner ΓÇô Paperman (Handmade Notebook Business)</li>
           </ul>
         </div>
 
