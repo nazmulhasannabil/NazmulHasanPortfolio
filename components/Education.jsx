@@ -9,17 +9,26 @@ const education = [
     institution: "Dhaka University Technology Unit, MEC",
     period: "2019 – 2025",
     details:
-      "Graduated with a strong foundation in algorithms, data structures, software engineering, and web technologies. Session 2019–20.",
+      "Graduated June 2025 with a strong foundation in algorithms, data structures, software engineering, and web technologies. Session 2019–20.",
     focus: ["Software Engineering", "Web Development", "Data Structures"],
   },
   {
     icon: FaSchool,
     degree: "Higher Secondary Certificate (HSC)",
     institution: "Dhaka College, Dhaka",
-    period: "2017 – 2019",
+    period: "2019",
     details:
       "Science group with focus on mathematics and physics — the starting point of my journey into technology.",
     focus: ["Science Group", "Mathematics"],
+  },
+  {
+    icon: FaSchool,
+    degree: "Secondary School Certificate (SSC)",
+    institution: "Government Laboratory High School",
+    period: "2017",
+    details:
+      "Completed secondary education with a strong academic foundation before college.",
+    focus: ["Secondary"],
   },
 ];
 
@@ -41,7 +50,7 @@ const Education = () => {
           </h2>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {education.map((edu, index) => {
             const Icon = edu.icon;
             return (

@@ -46,7 +46,7 @@ const Photo = ({ motionValues }) => {
         transition={{ delay: 1.4, duration: 0.5 }}
       >
         <span className="inline-block w-2 h-2 rounded-full bg-emerald-400 mr-2 animate-pulse" />
-        Open to opportunities
+        Software Engineer at BYDS
       </motion.div>
     </div>
   );

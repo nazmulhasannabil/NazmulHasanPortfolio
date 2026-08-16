@@ -5,12 +5,16 @@ import { FaBriefcase, FaCamera, FaLaptopCode, FaStore } from "react-icons/fa";
 const experiences = [
   {
     icon: FaLaptopCode,
-    role: "Full-Stack Developer",
-    org: "Self-Directed / Freelance",
-    period: "2023 – Present",
+    role: "Software Engineer",
+    org: "BYDS — www.byds.ai",
+    period: "January 2026 – Present",
     description:
-      "Building production web applications — inventory systems, job portals, e-commerce platforms, and client websites using MERN stack and Next.js.",
-    highlights: ["6+ deployed projects", "Next.js & PostgreSQL", "Client deliverables"],
+      "Contribute to and maintain 3+ live client products, owning features from implementation through ongoing support and iteration. Build responsive web apps (React / Next.js) and cross-platform mobile apps (Flutter) aligned with real workflows, reliability, and UX clarity.",
+    highlights: [
+      "3+ live products",
+      "React / Next.js + Flutter",
+      "AI-assisted workflows",
+    ],
   },
   {
     icon: FaStore,

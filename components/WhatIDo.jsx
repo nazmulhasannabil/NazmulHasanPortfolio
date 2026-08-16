@@ -1,35 +1,35 @@
 "use client";
 import { motion } from "framer-motion";
-import { FaCode, FaServer, FaPalette, FaRocket } from "react-icons/fa";
+import { FaCode, FaServer, FaMobileAlt, FaRocket } from "react-icons/fa";
 
 const services = [
   {
     icon: FaCode,
     title: "Frontend Development",
     description:
-      "Responsive, interactive UIs with React, Next.js, Tailwind CSS, and Framer Motion — built for performance and great UX.",
+      "Responsive, interactive UIs with React, Next.js, TypeScript, and Tailwind — built for performance and clear UX.",
     tags: ["React", "Next.js", "Tailwind", "TypeScript"],
+  },
+  {
+    icon: FaMobileAlt,
+    title: "Mobile Development",
+    description:
+      "Cross-platform Flutter apps with real workflows — booking, auth, data handling, and REST API integration.",
+    tags: ["Flutter", "Dart", "Firebase", "REST"],
   },
   {
     icon: FaServer,
     title: "Backend & APIs",
     description:
-      "RESTful APIs, authentication, and database design using Node.js, Express, MongoDB, PostgreSQL, and Prisma.",
-    tags: ["Node.js", "Express", "MongoDB", "Prisma"],
-  },
-  {
-    icon: FaPalette,
-    title: "UI/UX Implementation",
-    description:
-      "Translating designs into pixel-perfect interfaces with attention to accessibility, responsiveness, and micro-interactions.",
-    tags: ["Responsive", "Animations", "Radix UI"],
+      "RESTful APIs and data layers with Node.js, Express, Spring Boot, MongoDB, PostgreSQL, Prisma, and Firebase.",
+    tags: ["Node.js", "Spring Boot", "MongoDB", "Prisma"],
   },
   {
     icon: FaRocket,
-    title: "Full-Stack Projects",
+    title: "Product Delivery",
     description:
-      "End-to-end web apps from concept to deployment on Vercel, Netlify, and Firebase — inventory systems, portals, and more.",
-    tags: ["MERN", "Deployment", "Firebase"],
+      "End-to-end features from scoping to deployment — collaborating with design and product, plus AI-assisted workflows.",
+    tags: ["Deployment", "AI tooling", "Iteration"],
   },
 ];
 
@@ -60,8 +60,8 @@ const WhatIDo = () => {
             What I <span className="gradient-text">Do</span>
           </h2>
           <p className="text-gray-400 mt-3 max-w-xl mx-auto">
-            From frontend polish to full-stack delivery — here&apos;s how I bring
-            value to projects and teams.
+            From web and mobile delivery to AI-assisted engineering — here&apos;s how
+            I bring value to products and teams.
           </p>
         </motion.div>
 

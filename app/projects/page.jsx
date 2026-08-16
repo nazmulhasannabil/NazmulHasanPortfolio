@@ -19,18 +19,38 @@ import ProjectSliderNav from '@/components/ProjectSliderNav';
 const projects = [
   {
     num: "01",
-    title: "Inventory Management System",
-
-    description: "An inventory management system that streamlines product tracking, stock management, and real-time inventory monitoring with automated alerts and reporting features.",
+    title: "Bilwax",
+    description:
+      "Flutter mobile app for on-demand car wash booking — service selection, customer–driver coordination, authentication, and real-time order management with REST APIs.",
     imageUrl: "/thumb6.png",
-    liveLink: "https://inventory-management-smoky-three.vercel.app",
-    githubLink: "https://github.com/nazmulhasannabil/inventory-management.git",
-    stack: ["Next.js", "Tailwind", "NeonDB", "Express", "PostgreSQL", "Prisma", "Stack-frame"]
+    liveLink: "",
+    githubLink: "",
+    stack: ["Flutter", "Dart", "Spring Boot", "REST APIs", "Firebase"],
   },
   {
     num: "02",
-    title: "Nazmul Hasan",
-    description: "Always learning, always improving.",
+    title: "Choto Bill",
+    description:
+      "Production Flutter app focused on food tracking and nutrition insights — user flows, data handling, and API integration for real-world use.",
+    imageUrl: "/thumb5.png",
+    liveLink: "",
+    githubLink: "",
+    stack: ["Flutter", "Dart", "REST APIs"],
+  },
+  {
+    num: "03",
+    title: "GradMate",
+    description:
+      "AI-powered graduate school guidance platform helping students with applications, test prep, and university research — responsive UI and AI-supported workflows.",
+    imageUrl: "/thumb1.png",
+    liveLink: "https://gradmate.ai",
+    githubLink: "",
+    stack: ["React", "Next.js", "TypeScript", "REST APIs"],
+  },
+  {
+    num: "04",
+    title: "Nazmul Hasan Portfolio",
+    description: "Personal portfolio built with Next.js — projects, experience, and photography hobby gallery.",
     imageUrl: "/thumb1.png",
     liveLink: "https://nazmul-hasan-portfolio.vercel.app",
     githubLink: "https://github.com/nazmulhasannabil/NazmulHasanPortfolio.git",
@@ -42,47 +62,58 @@ const projects = [
       "Lottie-React",
       "Radix UI",
       "Swiper",
-      "React Icons"
-    ]
-  },
-  {
-    num: "03",
-    title: "Sip and Savor",
-
-    description: "A full-stack coffee shop application that allows users to browse products, showcase coffee collections, and manage inventory with CRUD operations.",
-    imageUrl: '/thumb5.png',
-    liveLink: "https://coffeeemporium.netlify.app",
-    githubLink: "https://github.com/nazmulhasannabil/Coffee_Shop_Client.git",
-    stack: ["React", "Node.js", "Tailwind", " MongoDB", "Express", "Firebase"]
-  },
-  {
-    num: "04",
-    title: "Job Map",
-
-    description: "A job portal platform that enables users to post job listings and search for employment opportunities with advanced filtering and application tracking.",
-    imageUrl: "/thumb4.png",
-    liveLink: "https://mapjob.netlify.app",
-    githubLink: "https://github.com/nazmulhasannabil/Job_Portal_client.git",
-    stack: ["React", "Node.js", "MongoDB", "Express", "Tailwind", "Firebase"]
+      "React Icons",
+    ],
   },
   {
     num: "05",
-    title: "Somokounik",
-    description: "Developed for a civil engineering firm to showcase their services, projects, and expertise.",
-    imageUrl: "/thumb3.png",
-    liveLink: "https://somokounik.netlify.app",
-    githubLink: "https://github.com/nazmulhasannabil/Somokounik-v4.git",
-    stack: ["React", "Node", "Tailwind"]
+    title: "Sip and Savor",
+    description:
+      "A full-stack coffee shop application that allows users to browse products, showcase coffee collections, and manage inventory with CRUD operations.",
+    imageUrl: "/thumb5.png",
+    liveLink: "https://coffeeemporium.netlify.app",
+    githubLink: "https://github.com/nazmulhasannabil/Coffee_Shop_Client.git",
+    stack: ["React", "Node.js", "Tailwind", "MongoDB", "Express", "Firebase"],
   },
   {
     num: "06",
-    title: "Dental pavilion",
-
-    description: "A modern dental clinic website showcasing services, appointment booking, and patient care information.",
-    imageUrl: '/thumb2.png',
+    title: "Job Portal",
+    description:
+      "A job portal platform that enables users to post job listings and search for employment opportunities with advanced filtering and application tracking.",
+    imageUrl: "/thumb4.png",
+    liveLink: "https://mapjob.netlify.app",
+    githubLink: "https://github.com/nazmulhasannabil/Job_Portal_client.git",
+    stack: ["React", "Node.js", "MongoDB", "Express", "Tailwind", "Firebase"],
+  },
+  {
+    num: "07",
+    title: "Somokounik",
+    description:
+      "Live client site for a civil engineering firm to showcase services, projects, and expertise.",
+    imageUrl: "/thumb3.png",
+    liveLink: "https://somokounik.netlify.app",
+    githubLink: "https://github.com/nazmulhasannabil/Somokounik-v4.git",
+    stack: ["React", "Tailwind", "DaisyUI", "Email.js"],
+  },
+  {
+    num: "08",
+    title: "Inventory Management System",
+    description:
+      "An inventory management system that streamlines product tracking, stock management, and real-time inventory monitoring with automated alerts and reporting features.",
+    imageUrl: "/thumb6.png",
+    liveLink: "https://inventory-management-smoky-three.vercel.app",
+    githubLink: "https://github.com/nazmulhasannabil/inventory-management.git",
+    stack: ["Next.js", "Tailwind", "NeonDB", "Express", "PostgreSQL", "Prisma"],
+  },
+  {
+    num: "09",
+    title: "Dental Pavilion",
+    description:
+      "A modern dental clinic website showcasing services, appointment booking, and patient care information.",
+    imageUrl: "/thumb2.png",
     liveLink: "https://dentalpavilionbd.netlify.app",
     githubLink: "https://github.com/nazmulhasannabil/Dental-pavilion-template.git",
-    stack: ["HTML 5", "Tailwind", "JavaScript"]
+    stack: ["HTML 5", "Tailwind", "JavaScript"],
   },
 ];
 
@@ -132,16 +163,20 @@ const Projects = () => {
               </ul>
               <div className='border border-white/10 my-4'></div>
               <div className='flex gap-4'>
-                <Link href={project.liveLink} target="_blank" rel="noopener noreferrer" title="Visit Live Site">
-                  <motion.span whileHover={{ scale: 1.2 }} className="inline-block">
-                    <FaExternalLinkAlt className="text-xl hover:text-teal-400 transition" />
-                  </motion.span>
-                </Link>
-                <Link href={project.githubLink} target="_blank" rel="noopener noreferrer" title="Visit Github">
-                  <motion.span whileHover={{ scale: 1.2 }} className="inline-block">
-                    <FaGithub className="text-2xl hover:text-teal-400 transition" />
-                  </motion.span>
-                </Link>
+                {project.liveLink ? (
+                  <Link href={project.liveLink} target="_blank" rel="noopener noreferrer" title="Visit Live Site">
+                    <motion.span whileHover={{ scale: 1.2 }} className="inline-block">
+                      <FaExternalLinkAlt className="text-xl hover:text-teal-400 transition" />
+                    </motion.span>
+                  </Link>
+                ) : null}
+                {project.githubLink ? (
+                  <Link href={project.githubLink} target="_blank" rel="noopener noreferrer" title="Visit Github">
+                    <motion.span whileHover={{ scale: 1.2 }} className="inline-block">
+                      <FaGithub className="text-2xl hover:text-teal-400 transition" />
+                    </motion.span>
+                  </Link>
+                ) : null}
               </div>
 
               <ProjectSliderNav

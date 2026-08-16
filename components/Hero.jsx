@@ -7,12 +7,12 @@ import { FaFileDownload } from "react-icons/fa";
 import Link from "next/link";
 
 const recentStack = [
-  "Next.js 15",
+  "Flutter",
+  "Dart",
+  "Next.js",
+  "React",
   "TypeScript",
-  "PostgreSQL",
-  "Prisma",
-  "MongoDB",
-  "Framer Motion",
+  "Firebase",
 ];
 
 const spring = { damping: 25, stiffness: 180 };
@@ -77,7 +77,7 @@ const Hero = () => {
             transition={{ delay: 0.2, duration: 0.5 }}
           >
             <span className="w-2 h-2 rounded-full bg-teal-400 animate-pulse" />
-            Full-Stack Developer
+            Software Engineer
           </motion.div>
 
           <motion.h1
@@ -96,10 +96,11 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5, duration: 0.7 }}
           >
-            BSc CSE graduate building scalable full-stack apps with{" "}
-            <span className="text-white font-medium">React, Next.js & Node.js</span>.
-            Recently diving deep into{" "}
-            <span className="text-teal-400">TypeScript, PostgreSQL & Prisma</span>.
+            Software Engineer at BYDS with a BSc in CSE. I build production web and
+            mobile products with{" "}
+            <span className="text-white font-medium">React, Next.js & Flutter</span>
+            {" "}— and ship faster with{" "}
+            <span className="text-teal-400">AI-assisted development</span>.
           </motion.p>
 
           {/* Scrolling tech tags */}

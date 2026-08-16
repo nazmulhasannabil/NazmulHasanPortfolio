@@ -3,11 +3,11 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 
 const learningItems = [
-  { name: "TypeScript", progress: 75 },
-  { name: "PostgreSQL & Prisma", progress: 70 },
-  { name: "System Design", progress: 45 },
-  { name: "Testing (Jest/Vitest)", progress: 50 },
-  { name: "Docker & DevOps", progress: 35 },
+  { name: "AI-assisted coding (Cursor / Copilot)", progress: 80 },
+  { name: "Prompt-driven feature scaffolding", progress: 70 },
+  { name: "LLM APIs & automation workflows", progress: 55 },
+  { name: "RAG patterns & AI product tooling", progress: 45 },
+  { name: "TypeScript in production", progress: 75 },
 ];
 
 const CurrentlyLearning = () => {
@@ -29,7 +29,8 @@ const CurrentlyLearning = () => {
             Currently <span className="gradient-text">Learning</span>
           </h2>
           <p className="text-gray-400 mt-3">
-            Technologies I&apos;m actively sharpening to stay ahead in full-stack development.
+            Technologies I&apos;m actively sharpening around AI-assisted development
+            and production engineering.
           </p>
         </motion.div>
 

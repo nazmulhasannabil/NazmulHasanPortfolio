@@ -34,9 +34,9 @@ const CareerCTA = () => {
             </h2>
 
             <p className="text-gray-300 mb-8 leading-relaxed">
-              I&apos;m open to full-time roles, freelance projects, and
-              collaborations. Whether you need a full-stack developer or a
-              frontend specialist — let&apos;s talk.
+              I&apos;m a Software Engineer at BYDS building web and mobile products.
+              Open to collaborations and interesting projects — feel free to reach
+              out.
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">

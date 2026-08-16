@@ -5,8 +5,8 @@ import { motion } from "framer-motion";
 import aboutLottie from "../public/lottie/Login.json";
 
 const highlights = [
-  { label: "Projects Built", value: "6+" },
-  { label: "Stack Focus", value: "MERN + Next" },
+  { label: "Live Products", value: "3+" },
+  { label: "Stack Focus", value: "Web + Mobile" },
   { label: "Graduated", value: "CSE '25" },
 ];
 
@@ -52,16 +52,15 @@ const About = () => {
         </div>
 
         <p className="text-base sm:text-lg leading-relaxed text-gray-300 text-center md:text-left">
-          I&apos;m a passionate full-stack developer who loves turning ideas into
-          polished, production-ready web applications. From MERN stack apps to
-          modern Next.js platforms with PostgreSQL and Prisma — I focus on clean
-          code, smooth UX, and real-world impact.
+          Software Engineer at BYDS with a BSc in Computer Science &amp; Engineering.
+          I build and maintain production web and mobile products end to end —
+          React and Next.js on the web, Flutter on mobile — with a focus on
+          reliability, UX clarity, and maintainable codebases.
         </p>
 
         <p className="text-base leading-relaxed text-gray-400 text-center md:text-left">
-          Quick learner, detail-oriented, and always exploring new tools. Lately
-          I&apos;ve been sharpening my skills in TypeScript, serverless databases,
-          and animation-driven UI with Framer Motion.
+          I work in an AI &amp; automation-oriented environment, shipping faster with
+          modern tooling while keeping long-term product quality in mind.
         </p>
 
         {/* Stats row */}

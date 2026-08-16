@@ -9,9 +9,9 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata = {
-  title: "Nazmul Hasan | Full-Stack Developer",
+  title: "Nazmul Hasan | Software Engineer",
   description:
-    "Full-stack developer specializing in React, Next.js, Node.js, TypeScript, PostgreSQL & MongoDB. Building modern, scalable web applications.",
+    "Software Engineer at BYDS building production web and mobile products with React, Next.js, Flutter, and AI-assisted development.",
 };
 
 export default function RootLayout({ children }) {

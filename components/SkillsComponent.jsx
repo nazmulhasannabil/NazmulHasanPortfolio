@@ -6,23 +6,31 @@ import {
   SiPrisma,
   SiPostgresql,
   SiGit,
+  SiFlutter,
+  SiDart,
+  SiSpringboot,
+  SiMysql,
+  SiSocketdotio,
 } from "react-icons/si";
 
 export default function SkillComponent() {
   const skills = [
-    { icon: "/Skills-logo/html.png", title: "HTML", description: "Semantic markup for accessible web pages.", level: "Advanced" },
-    { icon: "/Skills-logo/css.png", title: "CSS", description: "Modern layouts, animations & responsive design.", level: "Advanced" },
-    { icon: "/Skills-logo/tailwind.png", title: "Tailwind CSS", description: "Utility-first styling at speed.", level: "Advanced" },
+    { iconComponent: SiFlutter, title: "Flutter", description: "Cross-platform mobile apps for production workflows.", level: "Advanced" },
+    { iconComponent: SiDart, title: "Dart", description: "Language for Flutter mobile development.", level: "Advanced" },
     { icon: "/Skills-logo/javascript.png", title: "JavaScript", description: "ES6+ for dynamic web experiences.", level: "Advanced" },
-    { iconComponent: SiTypescript, title: "TypeScript", description: "Type-safe JavaScript for scalable apps.", level: "Learning" },
+    { iconComponent: SiTypescript, title: "TypeScript", description: "Type-safe JavaScript for scalable apps.", level: "Intermediate" },
     { icon: "/Skills-logo/react.png", title: "React", description: "Component-driven UI development.", level: "Advanced" },
     { icon: "/Skills-logo/nextjs.png", title: "Next.js", description: "Full-stack React framework for production.", level: "Advanced" },
+    { icon: "/Skills-logo/redux.png", title: "Redux", description: "Predictable global state management.", level: "Intermediate" },
+    { icon: "/Skills-logo/tailwind.png", title: "Tailwind CSS", description: "Utility-first styling at speed.", level: "Advanced" },
     { icon: "/Skills-logo/node.png", title: "Node.js", description: "Server-side JavaScript runtime.", level: "Advanced" },
     { icon: "/Skills-logo/express.png", title: "Express.js", description: "Minimal Node.js web framework.", level: "Advanced" },
+    { iconComponent: SiSpringboot, title: "Spring Boot", description: "Java backend services and REST APIs.", level: "Intermediate" },
+    { iconComponent: SiSocketdotio, title: "Socket.io", description: "Realtime bidirectional communication.", level: "Intermediate" },
     { icon: "/Skills-logo/mongodb.png", title: "MongoDB", description: "NoSQL database for flexible data.", level: "Advanced" },
+    { iconComponent: SiMysql, title: "MySQL", description: "Relational database for structured data.", level: "Intermediate" },
     { iconComponent: SiPostgresql, title: "PostgreSQL", description: "Relational database for robust backends.", level: "Intermediate" },
     { iconComponent: SiPrisma, title: "Prisma", description: "Next-gen ORM for type-safe database access.", level: "Intermediate" },
-    { icon: "/Skills-logo/redux.png", title: "Redux", description: "Predictable global state management.", level: "Intermediate" },
     { icon: "/Skills-logo/firebase.png", title: "Firebase", description: "Auth, hosting & real-time services.", level: "Intermediate" },
     { iconComponent: SiGit, title: "Git & GitHub", description: "Version control & collaborative workflows.", level: "Advanced" },
   ];
@@ -53,7 +61,7 @@ export default function SkillComponent() {
             My <span className="gradient-text">Skills</span>
           </h2>
           <p className="text-gray-400 mt-3 max-w-lg mx-auto">
-            Technologies I use to build modern, performant web applications
+            Technologies I use to build modern web and mobile products
           </p>
         </motion.div>
 
